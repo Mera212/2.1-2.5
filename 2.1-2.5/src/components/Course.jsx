@@ -1,7 +1,7 @@
 import App from "../App"    
 
 const Course = ({course})=>{
-    
+    const total = course.parts.reduce((a,b) => a + b.exercises, 0)
       return (
       <div>
       <h1>{course.name}</h1>
@@ -12,6 +12,7 @@ const Course = ({course})=>{
       {part.name} {part.exercises}</li>
       )}
       </ul>
+      <p>total of {total} exercises</p>
       </div>
     )
   }
