@@ -13,6 +13,7 @@ const Course = ({course})=>{
       )}
       </ul>
       <p>total of {total} exercises</p>
+      
       </div>
     )
   }
