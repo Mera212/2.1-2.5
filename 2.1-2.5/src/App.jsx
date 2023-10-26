@@ -6,6 +6,7 @@ import './App.css'
 
 
 const App = () => {
+  console.log('1')
   const courses = [
     {
       name: 'Half Stack application development',

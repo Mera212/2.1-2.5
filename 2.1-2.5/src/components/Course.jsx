@@ -2,6 +2,7 @@ import App from "../App"
 
 const Course = ({course})=>{
     const total = course.parts.reduce((a,b) => a + b.exercises, 0)
+    console.log(total)
       return (
       <div>
       <h1>{course.name}</h1>
